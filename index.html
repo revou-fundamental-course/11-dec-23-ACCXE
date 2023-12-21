@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="Assets/1.jpg" alt="Profile Picture">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#ourProfile">Our Profile</a></li>
+                <li><a href="#achievement">Achievement</a></li>
+                <li><a href="#contactUs">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" style="background-image: url('Assets/2.jpg')">
+        <div class="banner">
+            <div id="welcomeMessage"></div>
+            <p>Ini adalah Website Latihan Pertama Saya</p>
+        </div>
+    </section>
+
+    <section id="ourProfile">
+        <div class="profile-container">
+            <img src="Assets/2.jpg" alt="Profil 1">
+            <div class="profile-info">
+                <p>Profile 1</p>
+            </div>
+        </div>
+        <div class="profile-container">
+            <img src="Assets/3.jpg" alt="Profil 2">
+            <div class="profile-info">
+                <p>Profile 2</p>
+            </div>
+        </div>
+        <div class="profile-container">
+            <img src="Assets/4.jpg" alt="Profil 3">
+            <div class="profile-info">
+                <p>Profile 3</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contactUs">
+        <h2>Contact Us</h2>
+        <form id="messageUsForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="button" onclick="submitForm()">Submit</button>
+        </form>
+        <div id="submittedValues">
+            <h3>Hasil Submit</h3>
+            <textarea id="resultTextArea" readonly></textarea>
+        </div>
+    </section>
+
+    <footer>
+        <p>Created By Ridlo</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
